@@ -19,7 +19,10 @@ Assets/
 ├── Audio/
 ├── Models/
 ├── Plugins/
+├── Settings/            # URP 렌더 파이프라인 설정 (Unity 생성)
 └── Imports/             # 외부 에셋 스토어 에셋은 전부 여기 (직접 만든 에셋과 분리)
+    ├── Fonts/           # 폰트 원본과 TMP 폰트 에셋
+    └── TextMesh Pro/    # TMP Essential Resources (Unity 생성 폴더)
 ```
 
 ## 규칙
@@ -28,5 +31,5 @@ Assets/
 - 새 스크립트는 기능별 폴더에 넣는다. 폴더가 애매하면 AI가 위치를 제안한다.
 - Input Action 에셋은 `Assets/Input/`에 둔다. (`TechSpec.md` — new Input System 사용)
 - 기능 테스트는 `Assets/Scenes/Test/`의 테스트 씬에서 한다. (메인 씬 충돌·오염 방지)
-- 폴더 이름은 PascalCase, 영어로 짓는다.
+- 폴더 이름은 PascalCase, 영어로 짓는다. 단, 패키지가 생성한 폴더(`TextMesh Pro` 등)는 이름을 바꾸지 않는다.
 - 에셋·폴더를 옮기거나 이름을 바꿀 때는 **Unity 에디터 안에서** 한다. 탐색기에서 옮기면 `.meta`가 따라가지 않아 참조가 끊어진다.
