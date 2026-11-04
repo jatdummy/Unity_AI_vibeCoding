@@ -5,17 +5,22 @@ using UnityEngine.InputSystem;
 public class PlayerJump : MonoBehaviour
 {
     [Header("입력")]
-    [SerializeField] private InputActionReference _jumpAction;  // Player/Jump (Button)
+    // 점프 입력 액션(Player/Jump, Button)
+    [SerializeField] private InputActionReference _jumpAction;
 
     [Header("점프")]
-    [SerializeField] private float _jumpForce = 5f;             // 위쪽으로 가하는 순간 힘
+    // 위쪽으로 가하는 순간 힘
+    [SerializeField] private float _jumpForce = 5f;
 
     [Header("착지 판정")]
-    [SerializeField] private float _groundCheckDistance = 1.1f; // 피벗에서 아래로 쏘는 레이 길이
-    [SerializeField] private LayerMask _groundLayer;            // 바닥으로 인정할 레이어
+    // 피벗에서 아래로 쏘는 레이 길이
+    [SerializeField] private float _groundCheckDistance = 1.1f;
+    // 바닥으로 인정할 레이어
+    [SerializeField] private LayerMask _groundLayer;
 
     private Rigidbody _rigidbody;
-    private bool _isJumpRequested;                              // Update에서 받은 입력을 FixedUpdate로 넘기기 위한 플래그
+    // Update에서 받은 입력을 FixedUpdate로 넘기기 위한 플래그
+    private bool _isJumpRequested;
 
     private void Awake() => _rigidbody = GetComponent<Rigidbody>();
     private void OnEnable() => _jumpAction.action.Enable();
