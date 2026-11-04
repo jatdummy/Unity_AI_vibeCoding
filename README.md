@@ -5,8 +5,8 @@
 [2026-10-27] 프롬프트 작성, Claude Code로 Git 작업 맡겨보기 - UseAI_02  
 [2026-10-28] Claude Code 지침 설계(CLAUDE.md와 행동 규칙 구성) - UseAI_02  
 [2026-10-29] Issue 작성 규칙, 템플릿, Skill 작성 (WorkflowRules, /github-issue) - UseAI_02  
-[2026-10-30] PR · Branch 작성 규칙, 템플릿, Skill 작성 (GithubPRRule, GithubBranchRule, /github-pr) - UseAI_02
-[2026-11-02] AI Game Developer로 Unity MCP와 Claude Code 연결 - 【UseAI_02】
-[2026-11-04] 서브 에이전트 구성과 훅 정리 (developer · reviewer, tech-writer · doc-auditor) - UseAI_02
+[2026-10-30] PR · Branch 작성 규칙, 템플릿, Skill 작성 (GithubPRRule, GithubBranchRule, /github-pr) - UseAI_02  
+[2026-11-02] AI Game Developer로 Unity MCP와 Claude Code 연결 - UseAI_02  
+[2026-11-04] 서브 에이전트 구성과 훅 정리 (developer · reviewer, tech-writer · doc-auditor) - UseAI_02  
 
 [학습 기록 Velog](https://velog.io/@ewq44/posts?tag=AI)
