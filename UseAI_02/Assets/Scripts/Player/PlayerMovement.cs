@@ -4,10 +4,12 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("입력")]
-    [SerializeField] private InputActionReference _moveAction;  // Player/Move (Vector2)
+    // 이동 입력 액션(Player/Move, Vector2)
+    [SerializeField] private InputActionReference _moveAction;
 
     [Header("이동")]
-    [SerializeField] private float _moveSpeed = 5f;             // 초당 이동 거리
+    // 초당 이동 거리
+    [SerializeField] private float _moveSpeed = 5f;
 
     private void OnEnable() => _moveAction.action.Enable();
     private void Update() => Move();
